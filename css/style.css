@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    box-sizing: border-box;
+}
+
+
+#hero{
+    background-image: url('./images/fondo_image.jpg');
+    width: 100%;
+    height: 1000px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+}
+
+#hero h2{
+    color: rgb(70, 61, 52);
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-top: 330px;
+    margin-left: 200px;
+    text-shadow: 1px 1px 2px white;
+}
+
+#hero p{
+    color: white;
+    font-size: 22px;
+    margin: 20px 0px;
+    margin-left: 300px;
+    text-shadow: 1px 1px 2px black;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+}
+
+header h1{
+    color: white;
+}
+
+
+header ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    padding-right: 20px;
+}
+
+header ul li{
+    padding: 0px 12px;
+    color:white;
+}
+
+header a{
+    color:white;
+    text-decoration: none;
+}
+
+header a:hover {
+    border-bottom: 1 px solid;
+    background: rgb(134, 121, 93);
+  }
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(49, 40, 33);
+}
+
+footer p{
+    color: white;
+}
+
+.btn-whatsapp {
+    position: fixed;
+    right: 20px;
+    bottom: 10px;
+    z-index: 100
+}
+
+div a img{
+    width: 70px;
+    height: 70px;
+}
+
+main{
+    background-image: url('./images/fondo_image3.jpg');
+    width: 100%;
+    height: 1000px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container-nosotros{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0.5);
+    padding: 20px;
+    margin: 50px 30px;
+}
+
+.container-nosotros img{
+    width: 840px;
+    height: 500px;
+    border-radius: 5px;
+}
+
+.container-nosotros p{
+    color: white;
+    font-size: 16px;
+    margin: 20px;
+    padding: 15px;
+    text-align: justify;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 5px;
+}
+
+.main-title{
+    color: rgb(49, 40, 33);
+    font-size: 30px;
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 10px;
+
+}
+
+.container-servicios{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0.5);
+    padding: 20px;
+    margin: 50px 30px;
+}
+
+.card {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: 10px;
+    padding: 10px 10px;
+    text-align: center;
+}
+  
+.price {
+    color: rgb(49, 40, 33);
+    font-size: 22px;
+}
+
+.container-ubicacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0.5);
+    padding: 20px;
+    margin: 50px 30px;
+}
+
+.container-ubicacion iframe{
+    padding: 30px;
+    margin: 15px;
+}
+
+.container-ubicacion ul li{
+    color: white;
+    font-size: 16px;
+    margin: 4px;
+    padding: 4px;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.container-contacto {
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0.5);
+    padding: 20px;
+    margin: 50px 30px;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+}
+
+form label{
+    color: white;
+}
+
+input[type=submit] {
+    background-color: rgb(49, 40, 33);
+    color: white;
+    padding: 12px 80px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 20px 0px;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(134, 121, 93);
+}
+
+  
