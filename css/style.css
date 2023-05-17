@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-header{
+/* header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -43,7 +43,7 @@ header a{
 header a:hover {
     border-bottom: 1 px solid;
     background: rgb(134, 121, 93);
-}
+} */
 
 #hero{
     background-image: url('../images/background_image.jpg');
@@ -57,9 +57,9 @@ header a:hover {
     align-items: center;
 }
 
-#hero h2{
-    color: rgb(70, 61, 52);
-    font-size: 30px;
+#hero h1{
+    color: rgb(32, 29, 26);
+    font-size: 35px;
     text-transform: uppercase;
     text-shadow: 1px 1px 2px whitesmoke;
 }
@@ -82,6 +82,7 @@ footer{
 
 footer p{
     color: white;
+    margin-bottom: 0;
 }
 
 .btn-whatsapp {
@@ -237,9 +238,10 @@ input[type=submit]:hover {
         align-items: center;
     }
 
-    #hero h2{
+    #hero h1{
         color: rgb(70, 61, 52);
         font-size: 18px;
+        font-weight: 800;
         text-transform: uppercase;
         text-shadow: 1px 1px 2px white;
         text-align: center;
@@ -252,14 +254,14 @@ input[type=submit]:hover {
     }
 
     footer p{
-        font-size: 13px;
+        font-size: 10px;
     }
 
     .main-title{
         color: rgb(49, 40, 33);
-        font-size: 24px;
+        font-size: 22px;
         text-align: center;
-        padding-top: 120px;
+        padding-top: 40px;
     }
 
     .container-nosotros{
