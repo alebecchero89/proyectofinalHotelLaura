@@ -5,6 +5,21 @@
     box-sizing: border-box;
 }
 
+
+.navbar{
+    background-color: rgb(49, 40, 33);
+    padding: 12px;
+}
+
+.navbar-brand{
+    color: white;
+    font-size: 25px;
+}
+
+.container-fluid a:hover{
+    color: rgb(167, 152, 119)
+}
+
 /* header{
     display: flex;
     flex-direction: row;
