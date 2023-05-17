@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
 
@@ -68,6 +68,22 @@ header a:hover {
     color: white;
     font-size: 22px;
     text-shadow: 1px 1px 2px black;
+}
+
+.contenedor-hero{
+    background-color: rgba(172, 170, 170, 0.4);
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(49, 40, 33);
+    padding: 40px;
+    margin: 100px auto;
+    width: 60%;
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 footer{
@@ -239,7 +255,7 @@ input[type=submit]:hover {
     }
 
     #hero h1{
-        color: rgb(70, 61, 52);
+        color: rgb(32, 29, 26);
         font-size: 18px;
         font-weight: 800;
         text-transform: uppercase;
@@ -251,6 +267,7 @@ input[type=submit]:hover {
         color: white;
         font-size: 12px;
         text-shadow: 1px 1px 2px black;
+        text-align: center;
     }
 
     footer p{
