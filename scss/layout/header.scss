@@ -7,7 +7,7 @@ header{
                 color: $color-primario;
                 font-size: 25px;
                 &:hover{
-                    color: $color-secundario;
+                    color: $color-terciario;
                 }
             }
             .collapse{
@@ -15,7 +15,7 @@ header{
                     li{
                         a{
                             &:hover{
-                                color: $color-secundario;
+                                color: $color-terciario;
                             }
                         }
                     }
