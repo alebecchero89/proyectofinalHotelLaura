@@ -10,7 +10,4 @@ footer{
         color: $color-primario;
         margin-bottom: 0;
     }
-    @include mediaquery-mobile(){
-        background-color: aqua;
-    }
 }
