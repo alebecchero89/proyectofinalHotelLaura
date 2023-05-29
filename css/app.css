@@ -16,6 +16,9 @@ header .navbar .container-fluid .navbar-brand {
   color: rgb(37, 28, 17);
   font-size: 25px;
 }
+header .navbar .container-fluid .navbar-brand:hover {
+  color: rgb(243, 233, 212);
+}
 header .navbar .container-fluid .collapse ul li a:hover {
   color: rgb(243, 233, 212);
 }

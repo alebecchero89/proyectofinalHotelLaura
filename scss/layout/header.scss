@@ -6,6 +6,9 @@ header{
             .navbar-brand{
                 color: $color-primario;
                 font-size: 25px;
+                &:hover{
+                    color: $color-secundario;
+                }
             }
             .collapse{
                 ul{
