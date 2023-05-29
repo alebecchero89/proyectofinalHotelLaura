@@ -19,50 +19,10 @@
     color: rgb(243, 233, 212);
 }
 
-/* header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
-    position: fixed;
-    top:0;
-    left: 0;
-    width: 100%;
-    background: rgba(0,0,0,0.5);
-}
-
-header h1{
-    color: white;
-}
-
-
-header ul{
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    padding-right: 20px;
-}
-
-header ul li{
-    padding: 0px 12px;
-    color:white;
-}
-
-header a{
-    color:white;
-    text-decoration: none;
-}
-
-header a:hover {
-    border-bottom: 1 px solid;
-    background: rgb(134, 121, 93);
-} */
-
 #hero{
     background-image: url('../images/background_image.jpg');
     width: 100%;
-    height: 811px;
+    height: 880px;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -119,7 +79,7 @@ footer p{
     position: fixed;
     right: 20px;
     bottom: 10px;
-    z-index: 100
+    z-index: 100;
 }
 
 div a img{
@@ -130,7 +90,7 @@ div a img{
 main{
     background-image: url('../images/fondo_image4.jpg');
     width: 100%;
-    height: 811px;
+    height: 880px;
     background-size: cover;
     background-repeat: no-repeat;
 }

@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif !important;
+  box-sizing: border-box;
+}
+
+header .navbar {
+  background-color: rgb(119, 108, 83);
+  padding: 12px;
+}
+header .navbar .container-fluid .navbar-brand {
+  color: rgb(37, 28, 17);
+  font-size: 25px;
+}
+header .navbar .container-fluid .collapse ul li a:hover {
+  color: rgb(243, 233, 212);
+}
+
+main {
+  background-image: url("../images/fondo_image4.jpg");
+  width: 100%;
+  height: 880px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main .main-title {
+  color: rgb(243, 233, 212);
+  font-size: 30px;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+main #hero {
+  background-image: url("../images/background_image.jpg");
+  width: 100%;
+  height: 880px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .contenedor-hero {
+  background-color: rgba(172, 170, 170, 0.4);
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(49, 40, 33);
+  padding: 40px;
+  margin: 100px auto;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .contenedor-hero h1 {
+  color: rgb(32, 29, 26);
+  font-size: 35px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px whitesmoke;
+}
+main .contenedor-hero p {
+  color: white;
+  font-size: 22px;
+  text-shadow: 1px 1px 2px black;
+}
+main .container-nosotros {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: rgba(172, 170, 170, 0.3);
+  padding: 20px;
+  margin: 50px 30px;
+}
+main .container-nosotros img {
+  width: 840px;
+  height: 500px;
+  border-radius: 5px;
+}
+main .container-nosotros p {
+  color: white;
+  font-size: 16px;
+  margin: 20px;
+  padding: 15px;
+  text-align: justify;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+main .container-servicios {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: rgba(172, 170, 170, 0.3);
+  padding: 30px;
+  margin: 30px;
+}
+main .container-servicios .card {
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  margin: 10px;
+  padding: 10px 10px;
+  text-align: center;
+}
+main .container-servicios .card .price {
+  color: rgb(37, 28, 17);
+  font-size: 22px;
+}
+main .container-ubicacion {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: rgba(172, 170, 170, 0.3);
+  padding: 20px;
+  margin: 50px 30px;
+}
+main .container-ubicacion iframe {
+  padding: 30px;
+  margin: 15px;
+}
+main .container-ubicacion ul li {
+  color: white;
+  font-size: 16px;
+  margin: 4px;
+  padding: 4px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+main .container-contacto {
+  border-radius: 5px;
+  background-color: rgba(172, 170, 170, 0.3);
+  padding: 20px;
+  margin: 20px 30px;
+}
+main .container-contacto form label {
+  color: white;
+}
+main .container-contacto form input[type=submit] {
+  background-color: rgb(134, 121, 93);
+  color: white;
+  text-transform: uppercase;
+  padding: 12px 80px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  margin: 20px 0px;
+}
+main .container-contacto form input[type=submit]:hover {
+  background-color: rgb(187, 171, 138);
+}
+
+.btn-whatsapp {
+  position: fixed;
+  right: 20px;
+  bottom: 10px;
+  z-index: 100;
+}
+.btn-whatsapp a img {
+  width: 70px;
+  height: 70px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0px;
+  bottom: 0;
+  width: 100%;
+  height: 5vh;
+  background-color: rgb(119, 108, 83);
+}
+footer p {
+  color: rgb(37, 28, 17);
+  margin-bottom: 0;
+}
+
+/*# sourceMappingURL=app.css.map */
