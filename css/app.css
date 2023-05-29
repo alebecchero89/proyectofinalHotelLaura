@@ -4,6 +4,10 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
 
+h2 {
+  font-size: 22px;
+}
+
 p {
   font-family: "Poppins";
 }
@@ -170,6 +174,26 @@ main .container-contacto form input[type=submit]:hover {
   background-color: rgb(187, 171, 138);
 }
 main .container-contacto form input[type=text], main .container-contacto form select, main .container-contacto form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+main .container-contacto form input[type=number] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+main .container-contacto form input[type=email] {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
