@@ -1,0 +1,23 @@
+header{
+    .navbar{
+        background-color: rgb(119, 108, 83);
+        padding: 12px;
+        .container-fluid{
+            .navbar-brand{
+                color: $color-primario;
+                font-size: 25px;
+            }
+            .collapse{
+                ul{
+                    li{
+                        a{
+                            &:hover{
+                                color: $color-secundario;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

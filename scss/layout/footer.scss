@@ -1,0 +1,14 @@
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+    bottom: 0;
+    width: 100%;
+    height: 5vh;
+    background-color: rgb(119, 108, 83);
+    p{
+        color: $color-primario;
+        margin-bottom: 0;
+    }
+}
