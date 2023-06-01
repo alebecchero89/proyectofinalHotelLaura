@@ -40,6 +40,12 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
 }
+@media screen and (max-width: 576px) {
+  main {
+    height: 100%;
+    bottom: 0;
+  }
+}
 main .main-title {
   color: rgb(85, 74, 51);
   font-size: 30px;
@@ -47,8 +53,14 @@ main .main-title {
   padding-top: 40px;
   padding-bottom: 10px;
 }
+@media screen and (max-width: 576px) {
+  main .main-title {
+    font-size: 20px;
+    padding-top: 30px;
+  }
+}
 main #hero {
-  background-image: url("../images/background_image.jpg");
+  background-image: url("../images/background_image.jpg") !important;
   width: 100%;
   height: 880px;
   background-size: cover;
@@ -72,16 +84,35 @@ main .contenedor-hero {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 576px) {
+  main .contenedor-hero {
+    width: 85%;
+    margin: 40px;
+    padding: 60px;
+  }
+}
 main .contenedor-hero h1 {
   color: rgb(32, 29, 26);
   font-size: 35px;
   text-transform: uppercase;
   text-shadow: 1px 1px 2px whitesmoke;
 }
+@media screen and (max-width: 576px) {
+  main .contenedor-hero h1 {
+    font-size: 16px;
+    text-align: center;
+  }
+}
 main .contenedor-hero p {
   color: white;
   font-size: 22px;
   text-shadow: 1px 1px 2px black;
+}
+@media screen and (max-width: 576px) {
+  main .contenedor-hero p {
+    font-size: 12px;
+    text-align: center;
+  }
 }
 main .container-nosotros {
   display: flex;
@@ -93,10 +124,27 @@ main .container-nosotros {
   padding: 20px;
   margin: 50px 30px;
 }
+@media screen and (max-width: 576px) {
+  main .container-nosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 20px 15px;
+  }
+}
 main .container-nosotros img {
   width: 840px;
   height: 500px;
   border-radius: 5px;
+}
+@media screen and (max-width: 576px) {
+  main .container-nosotros img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border-radius: 5px 5px 0px 0px;
+  }
 }
 main .container-nosotros p {
   color: white;
@@ -106,6 +154,13 @@ main .container-nosotros p {
   text-align: justify;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 5px;
+}
+@media screen and (max-width: 576px) {
+  main .container-nosotros p {
+    font-size: 10px;
+    margin: auto;
+    border-radius: 0px 0px 5px 5px;
+  }
 }
 main .container-servicios {
   display: flex;
@@ -117,6 +172,16 @@ main .container-servicios {
   padding: 30px;
   margin: 30px;
 }
+@media screen and (max-width: 576px) {
+  main .container-servicios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 20px 15px;
+  }
+}
 main .container-servicios .card {
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -125,9 +190,28 @@ main .container-servicios .card {
   padding: 10px 10px;
   text-align: center;
 }
+@media screen and (max-width: 576px) {
+  main .container-servicios .card {
+    max-width: auto;
+  }
+}
+main .container-servicios .card h2 {
+  font-size: 18px;
+  margin-top: 8px;
+}
 main .container-servicios .card .price {
   color: rgb(37, 28, 17);
   font-size: 22px;
+}
+@media screen and (max-width: 576px) {
+  main .container-servicios .card .price {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 576px) {
+  main .container-servicios .card p {
+    font-size: 12px;
+  }
 }
 main .container-ubicacion {
   display: flex;
@@ -136,12 +220,35 @@ main .container-ubicacion {
   align-items: center;
   border-radius: 5px;
   background-color: rgba(77, 77, 77, 0.452);
-  padding: 20px;
+  padding: 20px 15px;
   margin: 50px 30px;
+}
+@media screen and (max-width: 576px) {
+  main .container-ubicacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 20px;
+  }
 }
 main .container-ubicacion iframe {
   padding: 30px;
   margin: 15px;
+}
+@media screen and (max-width: 576px) {
+  main .container-ubicacion iframe {
+    padding: 10px;
+    margin: 0;
+    width: auto;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 576px) {
+  main .container-ubicacion ul {
+    margin: 16px;
+    padding-left: 20px;
+  }
 }
 main .container-ubicacion ul li {
   color: white;
@@ -150,6 +257,11 @@ main .container-ubicacion ul li {
   padding: 4px;
   border-radius: 5px;
   background-color: rgba(0, 0, 0, 0.5);
+}
+@media screen and (max-width: 576px) {
+  main .container-ubicacion ul li {
+    font-size: 13px;
+  }
 }
 main .container-contacto {
   border-radius: 5px;
@@ -207,12 +319,32 @@ main .container-contacto form input[type=email] {
 .btn-whatsapp {
   position: fixed;
   right: 20px;
-  bottom: 10px;
+  bottom: 25px;
   z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.btn-whatsapp p {
+  color: white;
+  font-size: 16px;
+  margin-bottom: 5px;
+  text-shadow: 1px 1px 2px black;
+}
+@media screen and (max-width: 576px) {
+  .btn-whatsapp p {
+    font-size: 12px;
+  }
 }
 .btn-whatsapp a img {
   width: 70px;
   height: 70px;
+}
+@media screen and (max-width: 576px) {
+  .btn-whatsapp a img {
+    width: 55px;
+    height: 55px;
+  }
 }
 
 footer {
@@ -224,9 +356,20 @@ footer {
   width: 100%;
   background-color: rgb(119, 108, 83);
 }
+@media screen and (max-width: 576px) {
+  footer {
+    width: 100%;
+    bottom: 0;
+  }
+}
 footer p {
   color: rgb(37, 28, 17);
   margin-bottom: 0;
+}
+@media screen and (max-width: 576px) {
+  footer p {
+    font-size: 11px;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */

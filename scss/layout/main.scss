@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -10,15 +11,25 @@ main{
     height: 880px;
     background-size: cover;
     background-repeat: no-repeat;
+    @include mediaquery-mobile{
+        height: 100%;
+        bottom: 0;
+    }
+
     .main-title{
         color: $color-secundario;
         font-size: 30px;
         text-align: center;
         padding-top: 40px;
         padding-bottom: 10px;
+        @include mediaquery-mobile{
+            font-size: 20px;
+            padding-top: 30px;
+        }
     }
+
     #hero{
-        background-image: url('../images/background_image.jpg');
+        background-image: url('../images/background_image.jpg') !important;
         width: 100%;
         height: 880px;
         background-size: cover;
@@ -28,6 +39,7 @@ main{
         justify-content: center;
         align-items: center;
     }
+
     .contenedor-hero{
         background-color: rgba(172, 170, 170, 0.4);
         border-radius: 5px;
@@ -41,16 +53,29 @@ main{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        @include mediaquery-mobile{
+            width: 85%;
+            margin: 40px;
+            padding: 60px;
+        }
         h1{
             color: rgb(32, 29, 26);
             font-size: 35px;
             text-transform: uppercase;
             text-shadow: 1px 1px 2px whitesmoke;
+            @include mediaquery-mobile{
+                font-size: 16px;
+                text-align: center;
+            }
         }
         p{
             color: white;
             font-size: 22px;
             text-shadow: 1px 1px 2px black;
+            @include mediaquery-mobile{
+                font-size: 12px;
+                text-align: center;
+            }
         }
     }
     .container-nosotros{
@@ -62,10 +87,23 @@ main{
         background-color: rgba(77, 77, 77, 0.452);
         padding: 20px;
         margin: 50px 30px;
+        @include mediaquery-mobile{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            margin: 20px 15px;
+        }
         img{
             width: 840px;
             height: 500px;
             border-radius: 5px;
+            @include mediaquery-mobile{
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                border-radius: 5px 5px 0px 0px;
+            }
         }
         p{
             color: white;
@@ -75,6 +113,11 @@ main{
             text-align: justify;
             background-color: rgba(0,0,0,0.5);
             border-radius: 5px;
+            @include mediaquery-mobile{
+                font-size: 10px;
+                margin: auto;
+                border-radius: 0px 0px 5px 5px;
+            }
         }
     }
     .container-servicios{
@@ -86,6 +129,14 @@ main{
         background-color: rgba(77, 77, 77, 0.452);
         padding: 30px;
         margin: 30px;
+        @include mediaquery-mobile{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            margin: 20px 15px;
+        }
         .card{
             background-color: white;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -93,9 +144,24 @@ main{
             margin: 10px;
             padding: 10px 10px;
             text-align: center;
+            @include mediaquery-mobile{
+                max-width: auto;
+            }
+            h2{
+                font-size: 18px;
+                margin-top: 8px;
+            }
             .price{
                 color: $color-primario;
                 font-size: 22px;
+                @include mediaquery-mobile{
+                    font-size: 15px;
+                }
+            }
+            p{
+                @include mediaquery-mobile{
+                    font-size: 12px;
+                }
             }
         }
     }
@@ -106,13 +172,30 @@ main{
         align-items: center;
         border-radius: 5px;
         background-color: rgba(77, 77, 77, 0.452);
-        padding: 20px;
+        padding: 20px 15px;
         margin: 50px 30px;
+        @include mediaquery-mobile{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            margin: 20px;
+        }
         iframe{
             padding: 30px;
             margin: 15px;
+            @include mediaquery-mobile{
+                padding: 10px;
+                margin: 0;
+                width: auto;
+                height: 100%;
+            }
         }
         ul{
+            @include mediaquery-mobile{
+                margin: 16px;
+                padding-left: 20px;
+            }
             li{
                 color: white;
                 font-size: 16px;
@@ -120,6 +203,9 @@ main{
                 padding: 4px;
                 border-radius: 5px;
                 background-color: rgba(0,0,0,0.5);
+                @include mediaquery-mobile{
+                    font-size: 13px;
+                }
             }
         }
     }
@@ -182,12 +268,28 @@ main{
 .btn-whatsapp{
     position: fixed;
     right: 20px;
-    bottom: 10px;
+    bottom: 25px;
     z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p{
+        color: white;
+        font-size: 16px;
+        margin-bottom: 5px;
+        text-shadow: 1px 1px 2px black;
+        @include mediaquery-mobile{
+            font-size: 12px;
+        }
+    }
     a{
         img{
             width: 70px;
             height: 70px;
+            @include mediaquery-mobile{
+                width: 55px;
+                height: 55px;
+            }
         }
     }
 }

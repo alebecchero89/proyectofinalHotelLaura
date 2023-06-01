@@ -6,8 +6,15 @@ footer{
     bottom: 0;
     width: 100%;
     background-color: rgb(119, 108, 83);
+    @include mediaquery-mobile{
+        width: 100%;
+        bottom: 0;
+    }
     p{
         color: $color-primario;
         margin-bottom: 0;
+        @include mediaquery-mobile{
+            font-size: 11px;
+        }
     }
 }
