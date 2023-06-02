@@ -11,10 +11,6 @@ main{
     height: 880px;
     background-size: cover;
     background-repeat: no-repeat;
-    @include mediaquery-mobile{
-        height: 100%;
-        bottom: 0;
-    }
 
     .main-title{
         color: $color-secundario;
@@ -58,8 +54,14 @@ main{
             margin: 40px;
             padding: 60px;
         }
+        img{
+            padding-bottom: 15px;
+            @include mediaquery-mobile{
+                width: 420px;
+            }
+        }
         h1{
-            color: rgb(32, 29, 26);
+            color: rgb(46, 38, 30);
             font-size: 35px;
             text-transform: uppercase;
             text-shadow: 1px 1px 2px whitesmoke;
