@@ -1,296 +1,306 @@
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-main{
-    background-image: url('../images/fondo_image3.jpg');
-    width: 100%;
-    height: 880px;
-    background-size: cover;
-    background-repeat: no-repeat;
-
-    .main-title{
-        color: $color-secundario;
-        font-size: 30px;
-        text-align: center;
-        padding-top: 40px;
-        padding-bottom: 10px;
-        @include mediaquery-mobile{
-            font-size: 20px;
-            padding-top: 30px;
-        }
-    }
-
-    #hero{
-        background-image: url('../images/background_image.jpg') !important;
+html, body{
+    width: 100vw;
+    min-height: 100vh;
+    
+    main{
+        background-image: url('../images/fondo_image3.jpg');
         width: 100%;
-        height: 880px;
+        min-height: 83vh;
         background-size: cover;
-        background-repeat: no-repeat;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .contenedor-hero{
-        background-color: rgba(172, 170, 170, 0.4);
-        border-radius: 5px;
-        border-style: solid;
-        border-width: 2px;
-        border-color: rgb(49, 40, 33);
-        padding: 40px;
-        margin: 100px auto;
-        width: 60%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        @include mediaquery-mobile{
-            width: 85%;
-            margin: 40px;
-            padding: 60px;
-        }
-        img{
-            padding-bottom: 15px;
+        background-repeat: repeat;
+    
+        .main-title{
+            color: $color-secundario;
+            font-size: 30px;
+            text-align: center;
+            padding-top: 55px;
+            padding-bottom: 10px;
             @include mediaquery-mobile{
-                width: 420px;
+                font-size: 20px;
+                padding-top: 30px;
             }
         }
-        h1{
-            color: rgb(46, 38, 30);
-            font-size: 35px;
-            text-transform: uppercase;
-            text-shadow: 1px 1px 2px whitesmoke;
-            @include mediaquery-mobile{
-                font-size: 16px;
-                text-align: center;
-            }
-        }
-        p{
-            color: white;
-            font-size: 22px;
-            text-shadow: 1px 1px 2px black;
-            @include mediaquery-mobile{
-                font-size: 12px;
-                text-align: center;
-            }
-        }
-    }
-    .container-nosotros{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        border-radius: 5px;
-        background-color: rgba(77, 77, 77, 0.452);
-        padding: 20px;
-        margin: 50px 30px;
-        @include mediaquery-mobile{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 10px;
-            margin: 20px 15px;
-        }
-        img{
-            width: 840px;
-            height: 500px;
-            border-radius: 5px;
-            @include mediaquery-mobile{
-                width: 100%;
-                height: 100%;
-                margin: 0;
-                border-radius: 5px 5px 0px 0px;
-            }
-        }
-        p{
-            color: white;
-            font-size: 16px;
-            margin: 20px;
-            padding: 15px;
-            text-align: justify;
-            background-color: rgba(0,0,0,0.5);
-            border-radius: 5px;
-            @include mediaquery-mobile{
-                font-size: 10px;
-                margin: auto;
-                border-radius: 0px 0px 5px 5px;
-            }
-        }
-    }
-    .container-servicios{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        border-radius: 5px;
-        background-color: rgba(77, 77, 77, 0.452);
-        padding: 30px;
-        margin: 30px;
-        @include mediaquery-mobile{
+    
+        #hero{
+            background-image: url('../images/background_image.jpg') !important;
+            width: 100%;
+            height: 83vh;
+            background-size: cover;
+            background-repeat: no-repeat;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding: 10px;
-            margin: 20px 15px;
         }
-        .card{
-            background-color: white;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            max-width: 400px;
-            margin: 10px;
-            padding: 10px 10px;
-            text-align: center;
+    
+        .contenedor-hero{
+            background-color: rgba(172, 170, 170, 0.4);
+            border-radius: 5px;
+            border-style: solid;
+            border-width: 2px;
+            border-color: rgb(49, 40, 33);
+            padding: 40px;
+            margin: 100px auto;
+            width: 50%;
+            height: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             @include mediaquery-mobile{
-                max-width: auto;
+                width: 85%;
+                margin: 40px;
+                padding: 60px;
             }
-            h2{
-                font-size: 18px;
-                margin-top: 8px;
-            }
-            .price{
-                color: $color-primario;
-                font-size: 22px;
+            img{
+                width: 420px;
+                padding-bottom: 15px;
                 @include mediaquery-mobile{
-                    font-size: 15px;
+                    width: 340px;
+                }
+            }
+            h1{
+                color: rgb(46, 38, 30);
+                font-size: 30px;
+                text-transform: uppercase;
+                text-shadow: 1px 1px 2px whitesmoke;
+                @include mediaquery-mobile{
+                    font-size: 16px;
+                    text-align: center;
                 }
             }
             p{
+                color: white;
+                font-size: 20px;
+                text-shadow: 1px 1px 2px black;
                 @include mediaquery-mobile{
                     font-size: 12px;
+                    text-align: center;
                 }
             }
         }
-    }
-    .container-ubicacion{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        border-radius: 5px;
-        background-color: rgba(77, 77, 77, 0.452);
-        padding: 20px 15px;
-        margin: 50px 30px;
-        @include mediaquery-mobile{
+        .container-nosotros{
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
+            justify-content: center;
             align-items: center;
-            padding: 10px;
-            margin: 20px;
-        }
-        iframe{
-            padding: 30px;
-            margin: 15px;
+            border-radius: 5px;
+            background-color: rgba(77, 77, 77, 0.452);
+            padding: 20px;
+            margin: 50px 30px;
             @include mediaquery-mobile{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
                 padding: 10px;
-                margin: 0;
-                width: auto;
-                height: 100%;
+                margin: 20px 15px 42px 15px; 
             }
-        }
-        ul{
-            @include mediaquery-mobile{
-                margin: 16px;
-                padding-left: 20px;
+            img{
+                width: 840px;
+                height: 500px;
+                border-radius: 5px;
+                @include mediaquery-mobile{
+                    width: 100%;
+                    height: auto;
+                    margin: 0;
+                    border-radius: 5px 5px 0px 0px;
+                }
             }
-            li{
+            p{
                 color: white;
                 font-size: 16px;
-                margin: 4px;
-                padding: 4px;
-                border-radius: 5px;
+                margin: 20px;
+                padding: 15px;
+                text-align: justify;
                 background-color: rgba(0,0,0,0.5);
+                border-radius: 5px;
                 @include mediaquery-mobile{
-                    font-size: 13px;
+                    font-size: 10px;
+                    margin: auto;
+                    border-radius: 0px 0px 5px 5px;
                 }
             }
         }
-    }
-    .container-contacto{
-        border-radius: 5px;
-        background-color: rgba(39, 39, 39, 0.685);
-        padding: 20px;
-        margin: 20px 30px;
-        form{
-            label{
-                color: white;
-            }
-            input[type=submit]{
-                background-color: rgb(134, 121, 93);
-                color: white;
-                text-transform: uppercase;
-                padding: 12px 80px;
-                border-radius: 4px;
-                cursor: pointer;
-                font-size: 18px;
-                margin: 20px 0px;
-                &:hover{
-                    background-color: rgb(187, 171, 138);
-                }
-            }
-            input[type=text], select, textarea{
-                width: 100%;
-                padding: 12px;
-                border: 1px solid #ccc;
-                border-radius: 4px;
-                box-sizing: border-box;
-                margin-top: 6px;
-                margin-bottom: 16px;
-                resize: vertical;
-            }
-            input[type=number]{
-                width: 100%;
-                padding: 12px;
-                border: 1px solid #ccc;
-                border-radius: 4px;
-                box-sizing: border-box;
-                margin-top: 6px;
-                margin-bottom: 16px;
-                resize: vertical;
-            }
-            input[type=email]{
-                width: 100%;
-                padding: 12px;
-                border: 1px solid #ccc;
-                border-radius: 4px;
-                box-sizing: border-box;
-                margin-top: 6px;
-                margin-bottom: 16px;
-                resize: vertical;
-            }
-        }
-    }
-}
-
-.btn-whatsapp{
-    position: fixed;
-    right: 20px;
-    bottom: 25px;
-    z-index: 100;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    p{
-        color: white;
-        font-size: 16px;
-        margin-bottom: 5px;
-        text-shadow: 1px 1px 2px black;
-        @include mediaquery-mobile{
-            font-size: 12px;
-        }
-    }
-    a{
-        img{
-            width: 70px;
-            height: 70px;
+        .container-servicios{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            background-color: rgba(77, 77, 77, 0.452);
+            padding: 30px;
+            margin: 30px;
             @include mediaquery-mobile{
-                width: 55px;
-                height: 55px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 10px;
+                margin: 20px 15px 42px 15px;
+            }
+            .card{
+                background-color: white;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                max-width: 400px;
+                margin: 10px;
+                padding: 10px 10px;
+                text-align: center;
+                @include mediaquery-mobile{
+                    max-width: auto;
+                }
+                h2{
+                    font-size: 18px;
+                    margin-top: 8px;
+                }
+                .price{
+                    color: $color-primario;
+                    font-size: 22px;
+                    @include mediaquery-mobile{
+                        font-size: 15px;
+                    }
+                }
+                p{
+                    @include mediaquery-mobile{
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+        .container-ubicacion{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            background-color: rgba(77, 77, 77, 0.452);
+            padding: 20px 15px;
+            margin: 50px 30px;
+            position: relative;
+            @include mediaquery-mobile{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 10px;
+                margin: 20px;
+            }
+            iframe{
+                padding: 30px;
+                margin: 15px;
+                @include mediaquery-mobile{
+                    padding: 10px;
+                    margin: 0;
+                    width: auto;
+                    height: 100%;
+                }
+            }
+            ul{
+                @include mediaquery-mobile{
+                    margin: 16px;
+                    padding-left: 20px;
+                }
+                li{
+                    color: white;
+                    font-size: 16px;
+                    margin: 4px;
+                    padding: 4px;
+                    border-radius: 5px;
+                    background-color: rgba(0,0,0,0.5);
+                    @include mediaquery-mobile{
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+        .container-contacto{
+            border-radius: 5px;
+            background-color: rgba(39, 39, 39, 0.685);
+            padding: 30px;
+            margin: 40px 30px;
+            @include mediaquery-mobile{
+                margin: 20px 15px 42px 15px;
+            }
+            form{
+                label{
+                    color: white;
+                }
+                input[type=submit]{
+                    background-color: rgb(134, 121, 93);
+                    color: white;
+                    text-transform: uppercase;
+                    padding: 12px 80px;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    font-size: 18px;
+                    margin: 20px 0px;
+                    &:hover{
+                        background-color: rgb(187, 171, 138);
+                    }
+                }
+                input[type=text], select, textarea{
+                    width: 100%;
+                    padding: 12px;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    box-sizing: border-box;
+                    margin-top: 6px;
+                    margin-bottom: 16px;
+                    resize: vertical;
+                }
+                input[type=number]{
+                    width: 100%;
+                    padding: 12px;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    box-sizing: border-box;
+                    margin-top: 6px;
+                    margin-bottom: 16px;
+                    resize: vertical;
+                }
+                input[type=email]{
+                    width: 100%;
+                    padding: 12px;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    box-sizing: border-box;
+                    margin-top: 6px;
+                    margin-bottom: 16px;
+                    resize: vertical;
+                }
+            }
+        }
+    }
+    
+    .btn-whatsapp{
+        position: fixed;
+        right: 20px;
+        bottom: 25px;
+        z-index: 100;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        p{
+            color: white;
+            font-size: 16px;
+            margin-bottom: 5px;
+            text-shadow: 1px 1px 2px black;
+            @include mediaquery-mobile{
+                font-size: 12px;
+            }
+        }
+        a{
+            img{
+                width: 70px;
+                height: 70px;
+                @include mediaquery-mobile{
+                    width: 55px;
+                    height: 55px;
+                }
             }
         }
     }
