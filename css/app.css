@@ -4,6 +4,10 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
 }
 
+h1 {
+  font-size: 27px;
+}
+
 h2 {
   font-size: 22px;
 }
@@ -30,10 +34,21 @@ header .navbar .container-fluid .navbar-brand img {
   width: 200px;
 }
 header .navbar .container-fluid .collapse ul li a {
-  font-size: 19px;
+  font-size: 18px;
 }
 header .navbar .container-fluid .collapse ul li a:hover {
   color: rgb(221, 205, 172);
+}
+header .navbar .container-fluid .collapse ul li a:hover::after {
+  content: "";
+  height: 3px;
+  width: 0;
+  background-color: rgba(240, 222, 175, 0.904);
+  display: block;
+  transition: all 300ms;
+}
+header .navbar .container-fluid .collapse ul li a:hover::after {
+  width: 100%;
 }
 
 html, body {
@@ -55,15 +70,36 @@ html main, body main {
 html main .main-title, body main .main-title {
   background-color: rgb(202, 186, 161);
   color: rgb(85, 74, 51);
-  font-size: 28px;
   text-align: center;
   padding: 20px 0px 20px 0px;
 }
+html main .main-title h1, body main .main-title h1 {
+  display: inline-block;
+  position: relative;
+}
 @media screen and (max-width: 576px) {
-  html main .main-title, body main .main-title {
-    font-size: 20px;
-    padding-top: 30px;
+  html main .main-title h1, body main .main-title h1 {
+    font-size: 17px;
   }
+}
+html main .main-title h1::after, html main .main-title h1::before, body main .main-title h1::after, body main .main-title h1::before {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 3px;
+  background-color: currentColor;
+  top: 0.6em;
+  transform: scale(0);
+  transition: all 0.2s ease-in;
+}
+html main .main-title h1:hover::before, html main .main-title h1:hover::after, body main .main-title h1:hover::before, body main .main-title h1:hover::after {
+  transform: scale(1);
+}
+html main .main-title h1::before, body main .main-title h1::before {
+  left: -140px;
+}
+html main .main-title h1::after, body main .main-title h1::after {
+  right: -140px;
 }
 html main #hero, body main #hero {
   text-align: center;
@@ -121,16 +157,16 @@ html main #hero .contenedor-hero p, body main #hero .contenedor-hero p {
 }
 @keyframes animate {
   0%, 100% {
-    background-image: url("../images/BG-1.jpg");
+    background-image: url("/images/BG-1.jpg");
   }
   25% {
-    background-image: url("../images/BG-2.jpg");
+    background-image: url("/images/BG-2.jpg");
   }
   50% {
-    background-image: url("../images/BG-3.jpg");
+    background-image: url("/images/BG-3.jpg");
   }
   75% {
-    background-image: url("../images/BG-4.jpg");
+    background-image: url("/images/BG-4.jpg");
   }
 }
 html main .container-nosotros, body main .container-nosotros {
@@ -208,11 +244,16 @@ html main .container-servicios .card, body main .container-servicios .card {
   margin: 10px;
   padding: 10px 10px;
   text-align: center;
+  transition: all 400ms ease;
 }
 @media screen and (max-width: 576px) {
   html main .container-servicios .card, body main .container-servicios .card {
     max-width: auto;
   }
+}
+html main .container-servicios .card:hover, body main .container-servicios .card:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%);
 }
 html main .container-servicios .card h2, body main .container-servicios .card h2 {
   font-size: 18px;
@@ -221,6 +262,7 @@ html main .container-servicios .card h2, body main .container-servicios .card h2
 html main .container-servicios .card .price, body main .container-servicios .card .price {
   color: rgb(37, 28, 17);
   font-size: 22px;
+  padding: 10px 0px;
 }
 @media screen and (max-width: 576px) {
   html main .container-servicios .card .price, body main .container-servicios .card .price {
@@ -255,13 +297,15 @@ html main .container-ubicacion, body main .container-ubicacion {
 html main .container-ubicacion iframe, body main .container-ubicacion iframe {
   padding: 30px;
   margin: 15px;
+  width: 750px;
+  height: 550px;
+  border-radius: 5px;
 }
 @media screen and (max-width: 576px) {
   html main .container-ubicacion iframe, body main .container-ubicacion iframe {
-    padding: 10px;
-    margin: 0;
-    width: auto;
-    height: 100%;
+    padding: 10px 10px;
+    width: 330px;
+    height: 330px;
   }
 }
 @media screen and (max-width: 576px) {

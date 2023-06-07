@@ -19,9 +19,20 @@ header{
                 ul{
                     li{
                         a{
-                            font-size: 19px;
+                            font-size: 18px;
                             &:hover{
                                 color: $color-terciario;
+                            }
+                            &:hover::after{
+                                content:"";
+                                height: 3px;
+                                width: 0;
+                                background-color: rgba(240, 222, 175, 0.904);
+                                display: block;
+                                transition: all 300ms;
+                            }
+                            &:hover::after{
+                                width: 100%;
                             }
                         }
                     }
