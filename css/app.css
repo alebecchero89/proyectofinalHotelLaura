@@ -157,16 +157,16 @@ html main #hero .contenedor-hero p, body main #hero .contenedor-hero p {
 }
 @keyframes animate {
   0%, 100% {
-    background-image: url("/images/BG-1.jpg");
+    background-image: url("../images/BG-1.jpg");
   }
   25% {
-    background-image: url("/images/BG-2.jpg");
+    background-image: url("../images/BG-2.jpg");
   }
   50% {
-    background-image: url("/images/BG-3.jpg");
+    background-image: url("../images/BG-3.jpg");
   }
   75% {
-    background-image: url("/images/BG-4.jpg");
+    background-image: url("../images/BG-4.jpg");
   }
 }
 html main .container-nosotros, body main .container-nosotros {
