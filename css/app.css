@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mate+SC&family=Poppins:wght@400;500;700&display=swap");
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Mate SC", sans-serif;
   font-weight: 600;
 }
 
@@ -125,6 +125,7 @@ html main #hero .contenedor-hero, body main #hero .contenedor-hero {
 html main #hero .contenedor-hero img, body main #hero .contenedor-hero img {
   width: 420px;
   padding-bottom: 15px;
+  border-bottom: 2px solid white;
 }
 @media screen and (max-width: 576px) {
   html main #hero .contenedor-hero img, body main #hero .contenedor-hero img {
@@ -136,7 +137,7 @@ html main #hero .contenedor-hero h1, body main #hero .contenedor-hero h1 {
   font-size: 30px;
   text-transform: uppercase;
   text-shadow: 1px 1px 2px whitesmoke;
-  padding-bottom: 15px;
+  padding: 25px 0px 10px 0px;
 }
 @media screen and (max-width: 576px) {
   html main #hero .contenedor-hero h1, body main #hero .contenedor-hero h1 {
