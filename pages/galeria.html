@@ -1,16 +1,15 @@
-<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Hotel Laura ofrece un excelente servicio de alojamiento en la ciudad de Córdoba, destinada a clientes de todas las edades.">
-    <meta name="keywords" content="alojamiento, hotel, Córdoba, Centro, turismo, estadía, servicios, habitación, single, doble, triple">
+    <meta name="keywords" content="galería, imágenes, estadía, carrousel, fotos, hotel">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/app.css">
     <link rel="icon" type="image/png" href="../images/favicon.png"/>
-    <title>• Hotel Laura | Servicios •</title>
+    <title>• Hotel Laura | Galería •</title>
 </head>
 <body>
     <header class="sticky-top">
@@ -47,40 +46,70 @@
 
     <main>
         <section class="main-title animate__animated animate__fadeInDown animate__slower	3s">
-            <h1>Nuestros servicios</h1>
+            <h1>Nuestra galería</h1>
         </section>
-        <section class="container-servicios animate__animated animate__fadeInDown animate__slower	3s">
-            <div class="card">
-                <img src="../images/habitacion-single.jpg" alt="Habitación Single" style="width:100%">
-                <h2>Habitación Single</h2>
-                <p class="price">$6.000</p>
-                <p>Habitación individual con baño privado, TV por cable, servicio de wifi, servicio de limpieza y lavandería. No incluye estacionamiento ni desayuno. Se permiten mascotas pequeñas.</p>
-            </div>
-            <div class="card">
-                <img src="../images/habitacion-doble.jpg" alt="Habitación Doble" style="width:100%">
-                <h2>Habitación Doble</h2>
-                <p class="price">$6.000</p>
-                <p>Habitación con cama matrimonial, con baño privado. Dentro de los servicios se incluye TV por cable, servicio de wifi y atención al cuarto. No incluye estacionamiento ni desayuno.</p>
-            </div>
-            <div class="card">
-                <img src="../images/habitacion-triple.jpg" alt="Habitación Triple" style="width:100%">
-                <h2>Habitación Triple</h2>
-                <p class="price">$8.000</p>
-                <p>Habitación familiar para tres o más personas. Incluye cama doble o cucheta, TV por cable, servicio de wifi, limpieza y lavandería. No se incluye estacionamiento ni desayuno.</p>
-            </div>
-        </section>
-    </main>
+        <div class="container animate__animated animate__fadeInDown animate__slower	3s">
+            <div class="galleryContainer">
+                <div class="gallery">
+                    <input type="radio" name="controls" id="c1" checked>
+                    <img src="../images/BG-1.jpg" id="i1" class="galleryImage">
 
-    <div class="btn-whatsapp">
-        <p>¡Escribinos!</p>
-        <a href="https://wa.link/epugah" target="_blank">
-            <img src="../images/whatsapp_icon.png" alt="whatsapp">
-        </a>
-    </div>
+                    <input type="radio" name="controls" id="c2">
+                    <img src="../images/BG-2.jpg" id="i2" class="galleryImage">
+
+                    <input type="radio" name="controls" id="c3">
+                    <img src="../images/BG-3.jpg" id="i3" class="galleryImage">
+
+                    <input type="radio" name="controls" id="c4">
+                    <img src="../images/BG-4.jpg" id="i4" class="galleryImage">
+
+                    <input type="radio" name="controls" id="c5">
+                    <img src="../images/BG-1.jpg" id="i5" class="galleryImage">
+
+                    <input type="radio" name="controls" id="c6">
+                    <img src="../images/BG-2.jpg" id="i6" class="galleryImage">
+                </div>
+            </div>
+
+            <div class="thumbnails">
+                <label class="thumbnailImage" for="c1">
+                    <img src="../images/BG-1.jpg">
+                </label>
+
+                <label class="thumbnailImage" for="c2">
+                    <img src="../images/BG-2.jpg">
+                </label>
+
+                <label class="thumbnailImage" for="c3">
+                    <img src="../images/BG-3.jpg">
+                </label>
+
+                <label class="thumbnailImage" for="c4">
+                    <img src="../images/BG-4.jpg">
+                </label>
+
+                <label class="thumbnailImage" for="c5">
+                    <img src="../images/BG-1.jpg">
+                </label>
+
+                <label class="thumbnailImage" for="c6">
+                    <img src="../images/BG-2.jpg">
+                </label>
+            </div>
+        </div>
+
+        <div class="btn-whatsapp">
+            <p>¡Escribinos!</p>
+            <a href="https://wa.link/epugah" target="_blank">
+                <img src="../images/whatsapp_icon.png" alt="whatsapp">
+            </a>
+        </div>
+    </main>
 
     <footer>
         <p>Copyright © 2023 Hotel Laura • Todos los derechos reservados • By Lex </p>        
     </footer>
+
     <script src="../js/bootstrap.min.js"></script>
 </body>
 </html>

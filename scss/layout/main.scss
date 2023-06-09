@@ -308,6 +308,117 @@ html, body{
                 }
             }
         }
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            background-color: rgba(77, 77, 77, 0.452);
+            padding: 30px;
+            margin: 30px auto;
+            max-width: 85%;
+            width: 100%;
+            @include mediaquery-mobile{
+                max-width: 700px;
+                padding: 15px;
+            }
+            .galleryContainer{
+                width: 900px;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                position: relative;
+                @include mediaquery-mobile{
+                    width: 100%;
+                    margin: 0;
+                }
+                .gallery{
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 380px;
+                    width: 100%;
+                    input{
+                        display: none;
+                    }
+                    img{
+                        border-radius: 8px;
+                    }
+                    img:first-of-type{
+                        position: relative;
+                        display: flex;
+                        top: 0;
+                        left: 0;
+                        z-index: 10;
+                        border-radius: 8px;
+                    }
+                    .galleryImage{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        overflow: hidden;
+                        opacity: 0;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        transition: opacity 0.25s ease-out;
+                    }
+                    #c1:checked + #i1{
+                        opacity: 1;
+
+                    }
+                    #c2:checked + #i2{
+                        opacity: 1;
+                        
+                    }
+                    #c3:checked + #i3{
+                        opacity: 1;
+                        
+                    }
+                    #c4:checked + #i4{
+                        opacity: 1;
+                        
+                    }
+                    #c5:checked + #i5{
+                        opacity: 1;
+                        
+                    }
+                    #c6:checked + #i6{
+                        opacity: 1;
+                        
+                    }
+                }
+            }
+            .thumbnails{
+                margin-top: 10px;
+                height: 5%;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                overflow-x: auto;
+                overflow-y: hidden;
+                .thumbnailImage{
+                    margin: 0 5px;
+                    img{
+                        width: 100%;
+                        height: 120px;
+                        object-fit: cover;
+                        border-radius: 5px;
+                    }
+                }
+                .thumbnailImage:first-child{
+                    margin-left: 0px;
+                }
+                .thumbnailImage:last-child{
+                    margin-right: 0px;
+                }
+            }
+        }
     }
     
     .btn-whatsapp{
@@ -318,6 +429,10 @@ html, body{
         display: flex;
         flex-direction: column;
         align-items: center;
+        transition: all 400ms ease;
+        &:hover{
+            transform: scale(1.15);
+        }
         p{
             color: white;
             font-size: 16px;
